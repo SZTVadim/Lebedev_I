@@ -6,4 +6,3 @@ print(id(name1))
 
 name_city = "Город"
 print(type(name_city))
-
