@@ -34,7 +34,7 @@ print(delete_string_right)
 # ЗАДАНИЕ 4: Разделение и объединение строк
 list_level4 = "яблоко,банан,апельсин,груша"
 strip_list = list_level4.split(",")
-replace_list = list_level4.replace(",", " | ")
+replace_list = " ".join(strip_list)
 print(strip_list)
 print(replace_list)
 
@@ -65,8 +65,8 @@ print(space_count.isspace())
 # ЗАДАНИЕ 8: Срезы строк
 python_very_good = "Python very good"
 srez_python_very_good = python_very_good[0:3]
-srez_python_last = python_very_good[13:]
-srez_python_step = python_very_good[0:16:2]
+srez_python_last = python_very_good[-3:]
+srez_python_step = python_very_good[::2]
 srez_reverse = python_very_good[::-1]
 print(srez_python_very_good)
 print(srez_python_last)
