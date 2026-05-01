@@ -34,7 +34,7 @@ print(delete_string_right)
 # ЗАДАНИЕ 4: Разделение и объединение строк
 list_level4 = "яблоко,банан,апельсин,груша"
 strip_list = list_level4.split(",")
-replace_list = " ".join(strip_list)
+replace_list = " | ".join(strip_list)
 print(strip_list)
 print(replace_list)
 
