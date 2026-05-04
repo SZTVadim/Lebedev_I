@@ -27,7 +27,7 @@ print(sale_prices)
 student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
 student2 = {"имя": "Мария", "возраст": 21, "город": "Санкт-Петербург"}
 student3 = {**student2, **student1}
-student1.update(student3)
+student1.update(student2)
 print(student3)
 print(student2)
 print(student1)
