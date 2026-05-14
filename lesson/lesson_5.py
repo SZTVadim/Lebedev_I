@@ -2,7 +2,7 @@
 fruits = ["яблоко"]
 fruits.append("банан")
 fruits.extend(["апельсин", "груша"])
-fruits.insert(1, "виногдад")
+fruits.insert(1, "виноград")
 print(fruits)
 
 # ЗАДАНИЕ 2: Удаление элементов из списка
@@ -16,6 +16,7 @@ print(fruits_delete)
 fruits = ["яблоко", "банан", "апельсин", "банан"]
 index = (fruits.index("банан"))
 count_fruits = (fruits.count("банан"))
+print(index)
 print(count_fruits)
 
 # ЗАДАНИЕ 4: Сортировка и реверс списка
@@ -26,18 +27,18 @@ numbers.reverse()
 print(numbers)
 
 # ЗАДАНИЕ 5:
-generators = [n ** 3 for n in range(1, 8)]
+generators = [n ** 3 for n in range(1, 9)]
 print(generators)
 print(min(generators))
 print(max(generators))
 
-# ЗАДАНИЕ 6:
+# # ЗАДАНИЕ 6:
 numbers1 = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
-generators1 = [n for n in numbers if n > 10]
+generators1 = [x for x in numbers1 if x > 10]
 print(generators1)
 print(sum(generators1))
 
 # Задание 7:
 city = ["москва", "санкт-петербург", "казань"]
-city_big = [city.capitalize() for city in city]
+city_big = [x.capitalize() for x in city]
 print(city_big)
