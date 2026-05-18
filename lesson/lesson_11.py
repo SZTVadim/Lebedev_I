@@ -34,19 +34,23 @@ class BankAccount:
         self.balance = balance
 
     def deposit(self, amount):
-        return self.balance + amount
+        self.balance = self.balance + amount
+        return f"Пополнение баланса на {amount} баланс {self.balance}"
 
     def withdraw(self, amount):
+        self.balance = self.balance
         if self.balance >= amount:
-            return self.balance - amount
+            self.balance -= amount
+            return f"Успешное списание на сумму {amount}, Ваш баланс {self.balance}"
         else:
             return "Недостаточно средств"
 
     def balances(self):
-        return self.balance
+        return f"Ваш баланс - {self.balance}"
 
 
 score = BankAccount("Igor", 500)
 print(score.balances())
-print(score.deposit(100))
-print(score.withdraw(550))
+print(score.deposit(200))
+print(score.withdraw(500))
+print(score.balances())
