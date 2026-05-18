@@ -1,10 +1,12 @@
 # ЗАДАНИЕ 1: Работа с множествами
 fruits = {"яблоко", "банан"}
 fruits.add("апельсин")
-fruits.update(["груша", "слива"])
+fruits.update(["груша", "виноград"])
 fruits.discard("банан")
-# fruits.discard("киви")
+# fruits.remove("киви")
+deleted_fruits = fruits.pop()
 print(fruits)
+print(deleted_fruits)
 
 # ЗАДАНИЕ 2: Работа с кортежами
 coordinates = (10, 20, 30, 20, 10, 20, 40)
@@ -32,9 +34,9 @@ print(first)
 print(middle)
 print(last)
 print(new_numbers)
-generator_numbers = tuple(x for x in range(1, 10) if x % 2 == 0)
+generator_numbers = tuple(x for x in range(0, 11) if x % 2 == 0)
 print(generator_numbers)
-generator_numbers2 = tuple(x * x for x in range(1, 5))
+generator_numbers2 = tuple(x * x for x in range(1, 6))
 print(generator_numbers2)
-tuple_one = (1,)
+tuple_one = (42,)
 print(tuple_one)
