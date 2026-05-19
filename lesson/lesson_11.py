@@ -7,13 +7,13 @@ class Book:
         self.pages = pages
 
     def get_info(self):
-        return f"{self.title}, {self.author}, {self.pages}"
+        return f"'{self.title}' автор {self.author}, {self.pages} стр."
 
     def is_long(self):
         if self.pages > 300:
-            return "True"
+            return True
         else:
-            return "False"
+            return False
 
 
 book1 = Book("Одиссея", "Кристофер Нолан", 450)
@@ -38,19 +38,18 @@ class BankAccount:
         return f"Пополнение баланса на {amount} баланс {self.balance}"
 
     def withdraw(self, amount):
-        self.balance = self.balance
         if self.balance >= amount:
             self.balance -= amount
-            return f"Успешное списание на сумму {amount}, Ваш баланс {self.balance}"
+            return True
         else:
-            return "Недостаточно средств"
+            return False
 
-    def balances(self):
+    def get_balance(self):
         return f"Ваш баланс - {self.balance}"
 
 
 score = BankAccount("Igor", 500)
-print(score.balances())
+print(score.get_balance())
 print(score.deposit(200))
-print(score.withdraw(500))
-print(score.balances())
+print(score.withdraw(701))
+print(score.get_balance())
