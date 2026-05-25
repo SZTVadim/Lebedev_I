@@ -42,6 +42,7 @@ class BankAccount:
             self.balance -= amount
             return True
         else:
+            print("Недостаточно средств")
             return False
 
     def get_balance(self):
