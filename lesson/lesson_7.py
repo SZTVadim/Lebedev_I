@@ -25,9 +25,9 @@ tuple2 = (4, 5, 6)
 numbers = [10, 20, 30, 40, 50]
 sum_tuple = (tuple1 + tuple2)
 x_tuple = (tuple1 * 3)
-a, b, c = tuple1
-first, *middle, last = numbers
-new_numbers = tuple(numbers)
+ a, b, c = tuple1
+ new_numbers = tuple(numbers)
+ first, *middle, last = new_numbers
 print(sum_tuple)
 print(x_tuple)
 print(first)
