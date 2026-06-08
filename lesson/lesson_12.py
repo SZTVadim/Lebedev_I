@@ -25,7 +25,7 @@ class Cat(Animal):
         self.age = age
 
     def make_sound(self):
-        return f"{self.name} говорит: Мяу-Мяу!"
+        return f"{self.name} говорит: Мяу!"
 
 
 # ЧАСТЬ 3: Инкапсуляция - Класс Zoo (Зоопарк)
