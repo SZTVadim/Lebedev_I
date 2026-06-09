@@ -8,11 +8,14 @@ def log_execution(func):
 
     return wrapper
 
+
 @log_execution
 def calculate_sum(a, b):
     return a + b
 
+
 print(calculate_sum(5, 3))
+
 
 # ЗАДАНИЕ 2: @property и @classmethod
 class Book:
