@@ -2,7 +2,8 @@ import requests
 
 BASE_URL = "https://petstore.swagger.io/v2"
 ENDPOINT = "/pet"
-HEADERS = {"accept": "*/*",}
+HEADERS = {"accept": "*/*"}
+
 
 def create_pet():
     data = {
@@ -19,13 +20,15 @@ def create_pet():
 
     return response
 
+
 def list_pet(pet_id):
     response = requests.get(
         url=f"{BASE_URL}{ENDPOINT}/{pet_id}",
-        headers = HEADERS
+        headers=HEADERS
     )
 
     return response
+
 
 def rename_pet():
     data = {
@@ -42,6 +45,7 @@ def rename_pet():
 
     return response
 
+
 def delete_pet(pet_id):
 
     response = requests.delete(
@@ -50,5 +54,3 @@ def delete_pet(pet_id):
     )
 
     return response
-
-
